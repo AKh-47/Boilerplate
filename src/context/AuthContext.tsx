@@ -50,9 +50,5 @@ export default function AuthProvider({ children }: Props): ReactElement {
     logout,
   };
 
-  return (
-    <AuthContext.Provider value={value}>
-      {currentUser ? children : null}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
