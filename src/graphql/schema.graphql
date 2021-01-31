@@ -1,0 +1,9 @@
+type Query {
+   greeting: String!
+}
+
+type Mutation{
+ 
+}
+
+
